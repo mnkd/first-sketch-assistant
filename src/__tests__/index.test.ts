@@ -3,11 +3,16 @@ import { testAssistant } from '@sketch-hq/sketch-assistant-utils'
 
 import Assistant from '..'
 
-test('test assistant', async () => {
+test('text-font-name', async () => {
   const { violations, ruleErrors } = await testAssistant(
-    resolve(__dirname, './empty.sketch'),
+    resolve(__dirname, './font-name.sketch'),
     Assistant,
   )
-  expect(violations[0].message).toBe('Hello world')
+
+  const textFontNameViolations = violations.filter(
+    (v) => v.ruleName === 'first-sketch-assistant/text-font-name'
+  )
+
+  expect(textFontNameViolations).toHaveLength(1)
   expect(ruleErrors).toHaveLength(0)
 })
