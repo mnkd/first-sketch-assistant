@@ -1,17 +1,17 @@
 {
-  "name": "sketch-assistant-template",
-  "homepage": "https://github.com/sketch-hq/sketch-assistant-template",
+  "name": "first-sketch-assistant",
+  "homepage": "https://github.com/mnkd/first-sketch-assistant",
   "version": "1.0.0",
   "main": "dist/index.js",
   "sketch": "dist/sketch.js",
   "license": "MIT",
   "sketch-assistant": {
-    "title": "Sketch Assistant Template",
-    "description": "Template repository for a starter Assistant project",
+    "title": "First Sketch Assistant",
+    "description": "Sample Sketch Assistant project",
     "icon": ""
   },
   "author": {
-    "name": "Your Name or Company Name"
+    "name": "Mitsuru Nakada"
   },
   "keywords": [
     "sketch",
