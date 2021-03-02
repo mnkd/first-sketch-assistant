@@ -19,7 +19,7 @@ const textDisallow: RuleDefinition = {
   description: 'Reports a violation when text layers contain a configurable text pattern',
 }
 
-const texFontName: RuleDefinition = {
+const textFontName: RuleDefinition = {
   rule: async (context) => {
     const { utils } = context
 
@@ -42,7 +42,7 @@ const texFontName: RuleDefinition = {
 const assistant: AssistantPackage = async () => {
   return {
     name: 'first-sketch-assistant',
-    rules: [textDisallow, texFontName],
+    rules: [textDisallow, textFontName],
     config: {
       rules: {
         'first-sketch-assistant/text-disallow': { 
