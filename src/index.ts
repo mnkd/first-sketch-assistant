@@ -36,7 +36,7 @@ const textFontName: RuleDefinition = {
   },
   name: 'first-sketch-assistant/text-font-name',
   title: (config) => `Font name should be start "${config.allowed}"`,
-  description: 'Reports a violation when text layers contain a configurable text pattern',
+  description: 'Reports a violation when text layers is using invalid font',
 }
 
 const assistant: AssistantPackage = async () => {
